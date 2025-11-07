@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/cschone/Projekte/Lernen/C++/Proj001/main'
+relocations:     []
+...

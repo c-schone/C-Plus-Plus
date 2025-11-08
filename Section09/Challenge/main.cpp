@@ -121,9 +121,12 @@ int main()
 
     case 'q':
     case 'Q':
+      cout << "Bye!" << endl;
       shouldRun = false;
       break;
     default:
+      cout << "Unknown selection!\n"
+           << endl;
       break;
     }
   } while (shouldRun);

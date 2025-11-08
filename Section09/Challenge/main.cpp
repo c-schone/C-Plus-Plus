@@ -64,14 +64,13 @@ int main()
       }
       else
       {
-        double total{0};
-        double mean{0.0};
+        int total{0};
         for (auto val : vec)
         {
           total += val;
         }
-        mean = total / vec.size();
-        cout << mean << "\n"
+
+        cout << static_cast<double>(total) / vec.size() << "\n"
              << endl;
       }
       break;

@@ -14,13 +14,17 @@ int main()
   getline(cin, inputMessage);
 
   string encryptedMessage{};
-  for (int i{0}; i < inputMessage.length(); ++i)
+  for (char c : inputMessage)
   {
-    // zuerst buchstaben aus satz in alphabet finden
-    //  dann position in key anwenden
-    //  buchstabe aus key in encryptedMessage hinzufügen
-    size_t position = alphabet.find(inputMessage.at(i));
-    encryptedMessage.push_back(key.at(position));
+    size_t position = alphabet.find(c);
+    if (position != string::npos)
+    {
+      encryptedMessage += key.at(position);
+    }
+    else
+    {
+      encryptedMessage += c;
+    }
   }
 
   cout << encryptedMessage << endl;

@@ -127,7 +127,6 @@ int main()
     default:
       cout << "Unknown selection!\n"
            << endl;
-      break;
     }
   } while (shouldRun);
 

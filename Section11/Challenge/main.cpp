@@ -5,11 +5,11 @@ using namespace std;
 
 void displayMenu();
 char checkUserInput();
-void printNumbers(const vector<int> numbers);
+void printNumbers(const vector<int> &numbers);
 void addNumber(vector<int> &numbers);
-void displayMean(const vector<int> numbers);
-void displaySmallestNumber(const vector<int> numbers);
-void displayLargestNumber(const vector<int> numbers);
+void displayMean(const vector<int> &numbers);
+void displaySmallestNumber(const vector<int> &numbers);
+void displayLargestNumber(const vector<int> &numbers);
 void quitApp(bool &shouldRun);
 void showUnknownSelection();
 void executeChoice(const char &choice, vector<int> &vec, bool &shouldRun);
@@ -36,7 +36,7 @@ char checkUserInput()
   return choice;
 }
 
-void printNumbers(const vector<int> numbers)
+void printNumbers(const vector<int> &numbers)
 {
   if (numbers.size() == 0)
   {
@@ -66,7 +66,7 @@ void addNumber(vector<int> &numbers)
        << endl;
 }
 
-void displayMean(const vector<int> numbers)
+void displayMean(const vector<int> &numbers)
 {
   if (numbers.size() == 0)
   {
@@ -86,7 +86,7 @@ void displayMean(const vector<int> numbers)
   }
 }
 
-void displaySmallestNumber(const vector<int> numbers)
+void displaySmallestNumber(const vector<int> &numbers)
 {
   if (numbers.size() == 0)
   {
@@ -108,7 +108,7 @@ void displaySmallestNumber(const vector<int> numbers)
   }
 }
 
-void displayLargestNumber(const vector<int> numbers)
+void displayLargestNumber(const vector<int> &numbers)
 {
   if (numbers.size() == 0)
   {
